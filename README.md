@@ -18,18 +18,19 @@
 
 Changes required to make an existing CRA app work with single-spa are fairly minimal.
 
-1 ) You need to eject from CRA (it should be possible to instead fork react-scripts in the future if we wish)
+1) You need to eject from CRA (it should be possible to instead fork react-scripts in the future if we wish)
 
-2 ) Add new entry point to /config/paths for `single-spa` and update /webpack.config.js to use this entry point for production builds.
+2) Add new entry point to /config/paths for `single-spa` and update /webpack.config.js to use this entry point for production builds.
 
 https://github.com/sattaman/Spa/commit/c7e0f010ad73b8df66e515681b0bcf8cfcc10a76
 
-3 ) Add single-spa entry file and dependencies
+3) Add single-spa entry file and dependencies
 
 https://github.com/sattaman/Spa/commit/62e3b0df70cf7e6910bee7c49fe4ab71e5c0e5a0
 
 *Child apps are not changed when running in development, and still run standalone.* 
-*To function within the `single-spa` we bootstrap the production build. *
+
+*To function within the `single-spa` we bootstrap the production build.*
 
 
 ## Responding to react-router links
