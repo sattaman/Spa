@@ -1,6 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './registerApps';
+import * as singleSpa from "single-spa";
+import createHistory from 'history/createBrowserHistory'
+import { registerNewsApp } from './loadNews';
+import { registerNavApp } from './loadNav';
+import { registerHomeApp } from './loadHome';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const history = createHistory()
+
+registerNewsApp({ history })
+registerNavApp({ history });
+registerHomeApp({ history });
+
+singleSpa.start();
