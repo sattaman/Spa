@@ -1,11 +1,11 @@
 import * as singleSpa from "single-spa";
 import { runScript } from "./utils";
 
-const loadNews = async () => {
+const loadNav = async () => {
     await runScript('http://localhost:3001/static/js/main.js');
-    return window.news;
+    return window.nav;
 };
 
-export const registerNewsApp = () => {
-    singleSpa.registerApplication('nav', loadNews, () => true);
+export const registerNavApp = () => {
+    singleSpa.registerApplication('nav', loadNav, () => true);
 };
