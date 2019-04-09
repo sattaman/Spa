@@ -11,3 +11,7 @@ export const runScript = async (url) => {
         firstScript.parentNode.insertBefore(script, firstScript);
     });
 }; 
+
+export const matchingPathname = (pathnames) =>
+    (location) =>
+        pathnames.some(pathname => location.pathname === pathname);

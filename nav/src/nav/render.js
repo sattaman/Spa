@@ -1,21 +1,21 @@
 import React from 'react';
 import { Router } from "react-router";
-import { Link } from 'react-router-dom';
+import { Nav, Ul, Li, Link } from './style';
 
 export default ({ history }) => (
     <Router history={history}>
-        <nav> 
-            <ul>
-                <li>
+        <Nav> 
+            <Ul>
+                <Li>
                     <Link to="/home">Home</Link>
-                </li>
-                <li>
+                </Li>
+                <Li>
                     <Link to="/news/">News</Link>
-                </li>
-                <li>
+                </Li>
+                <Li>
                     <Link to={{ pathname: "/news/article", state: 'test' }}>Article</Link>
-                </li>
-            </ul>
-        </nav>
+                </Li>
+            </Ul>
+        </Nav>
     </Router>
 )

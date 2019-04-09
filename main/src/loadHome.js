@@ -1,5 +1,5 @@
 import * as singleSpa from "single-spa";
-import { runScript } from "./utils";
+import { runScript, matchingPathname } from "./utils";
 
 const loadHome = async () => {
     await runScript('http://localhost:3003/static/js/main.js');
@@ -7,5 +7,5 @@ const loadHome = async () => {
 };
 
 export const registerHomeApp = (props) => {
-    singleSpa.registerApplication('home', loadHome, () => true, props);
+    singleSpa.registerApplication('home', loadHome, matchingPathname(["/home"]), props);
 };

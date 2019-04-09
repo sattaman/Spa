@@ -1,5 +1,5 @@
 import * as singleSpa from "single-spa";
-import { runScript } from "./utils";
+import { runScript, matchingPathname } from "./utils";
 
 const loadNews = async () => {
     await runScript('http://localhost:3002/static/js/main.js');
@@ -7,5 +7,5 @@ const loadNews = async () => {
 };
 
 export const registerNewsApp = (props) => {
-    singleSpa.registerApplication('news', loadNews, () => true, props);
+    singleSpa.registerApplication('news', loadNews, matchingPathname(["/news", "/news/article"]), props);
 };
