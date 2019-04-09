@@ -2,16 +2,16 @@
 
 ## Why?
 
-Allow seamless transitioning between pages within overall app without page loads.
-Share authentication, Logging etc
-Solve issues faced with active pages , and passing state in route changes
-Allow multiple squads to coexist on a single page (navigation , opening other apps in modals etc)
+- Allow seamless transitioning between pages within overall app without page loads.
+- Share authentication, Logging etc
+- Solve issues faced with active pages , and passing state in route changes
+- Allow multiple squads to coexist on a single page (navigation , opening other apps in modals etc)
 
 ## POC objectives
 
-Determine what bootstrapping is required and if apps can still work independently
-Confirm routing between sub-apps works seamlessly
-Find out if different squads can add custom css. 
+- Determine what bootstrapping is required and if apps can still work independently
+- Confirm routing between sub-apps works seamlessly
+- Find out if different squads can add custom css. 
 
 
 ## To update existing CRA app for single-spa
@@ -20,11 +20,11 @@ Changes required to make an existing CRA app work with single-spa are fairly min
 
 1 ) You need to eject from CRA (it should be possible to instead fork react-scripts in the future if we wish)
 
-2) Add new entry point to /config/paths for `single-spa` and update /webpack.config.js to use this entry point for production builds.
+2 ) Add new entry point to /config/paths for `single-spa` and update /webpack.config.js to use this entry point for production builds.
 
 https://github.com/sattaman/Spa/commit/c7e0f010ad73b8df66e515681b0bcf8cfcc10a76
 
-3) Add single-spa entry file and dependencies
+3 ) Add single-spa entry file and dependencies
 
 https://github.com/sattaman/Spa/commit/62e3b0df70cf7e6910bee7c49fe4ab71e5c0e5a0
 
