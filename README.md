@@ -1,7 +1,17 @@
 # POC for single-spa
 
-Child apps are not changed when running in development, and still run standalone. 
-To function within the `single-spa` we bootstrap the production build. 
+## Why?
+
+Allow seamless transitioning between pages within overall app without page loads.
+Share authentication, Logging etc
+Solve issues faced with active pages , and passing state in route changes
+Allow multiple squads to coexist on a single page (navigation , opening other apps in modals etc)
+
+## POC objectives
+
+Determine what bootstrapping is required and if apps can still work independently
+Confirm routing between sub-apps works seamlessly
+Find out if different squads can add custom css. 
 
 
 ## To update existing CRA app for single-spa
@@ -17,6 +27,9 @@ https://github.com/sattaman/Spa/commit/c7e0f010ad73b8df66e515681b0bcf8cfcc10a76
 3) Add single-spa entry file and dependencies
 
 https://github.com/sattaman/Spa/commit/62e3b0df70cf7e6910bee7c49fe4ab71e5c0e5a0
+
+*Child apps are not changed when running in development, and still run standalone.* 
+*To function within the `single-spa` we bootstrap the production build. *
 
 
 ## Responding to react-router links
