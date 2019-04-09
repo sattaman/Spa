@@ -8,7 +8,7 @@
     "icis-react-scripts": "2.1.9"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3008 react-scripts start",
     "start-spa": "REACT_APP_ENTRY=src/spaEntry react-scripts start",
     "build": "react-scripts build",
     "build-spa": "REACT_APP_ENTRY=src/spaEntry react-scripts build",

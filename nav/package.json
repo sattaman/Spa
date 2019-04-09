@@ -6,10 +6,11 @@
     "icis-react-scripts": "2.1.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "single-spa-react": "^2.9.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3009 react-scripts start",
     "start-spa": "react-scripts start",
     "build": "react-scripts build",
     "build-spa": "react-scripts build",

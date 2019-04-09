@@ -4692,10 +4692,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-icis-react-scripts@2.1.8:
-  version "2.1.8"
-  resolved "http://nexus.cha.rbxd.ds:8081/repository/npm-group/icis-react-scripts/-/icis-react-scripts-2.1.8.tgz#3722c036adf14647937c55abb0d29b7dd4d56e8a"
-  integrity sha512-2jStNqmkIVgqAH4hlqJxNlN81eDvDIbRPheRBoSO/VXbRtpJNBlHIpKOyLfKgfabHnJD/t3iqt3o16O76wKYpg==
+icis-react-scripts@2.1.9:
+  version "2.1.9"
+  resolved "http://nexus.cha.rbxd.ds:8081/repository/npm-group/icis-react-scripts/-/icis-react-scripts-2.1.9.tgz#05b750dc6eb881fb275d410b442045824bd34f85"
+  integrity sha512-yEmDM6Aon7c3Qmc8oVSFbgBceMg1I6DYnpfv254j9sGAWbTaJMqztvUlhqN8QKrGcZ2uw9vUsECUxipLpnCv4A==
   dependencies:
     "@babel/core" "7.4.3"
     "@svgr/webpack" "4.1.0"
@@ -8780,6 +8780,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+single-spa-react@^2.9.0:
+  version "2.9.0"
+  resolved "http://nexus.cha.rbxd.ds:8081/repository/npm-group/single-spa-react/-/single-spa-react-2.9.0.tgz#f0314a15f9c64e159b0fd0e889f0bde9c7d3ac5e"
+  integrity sha512-ifHjaS2lgXrty8N3rxVvUG7uc7X++gcDztQ9Xdmr/yuz2/dXHCKGjGU459Ly9P6ja9wBG74cit6amEuVevN5tA==
 
 sisteransi@^1.0.0:
   version "1.0.0"
