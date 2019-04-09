@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Router } from "react-router";
+import { Link } from 'react-router-dom';
 
-export default () => (
-    <Router>
+export default ({ history }) => (
+    <Router history={history}>
         <nav> 
             <ul>
                 <li>
@@ -14,7 +15,6 @@ export default () => (
                 <li>
                     <Link to={{ pathname: "/news/article", state: 'test' }}>Article</Link>
                 </li>
-                
             </ul>
         </nav>
     </Router>

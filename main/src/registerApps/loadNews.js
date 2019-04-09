@@ -6,6 +6,6 @@ const loadNews = async () => {
     return window.news;
 };
 
-export const registerNewsApp = () => {
-    singleSpa.registerApplication('news', loadNews, () => true);
+export const registerNewsApp = (props) => {
+    singleSpa.registerApplication('news', loadNews, () => true, props);
 };

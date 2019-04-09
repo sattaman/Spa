@@ -6,6 +6,6 @@ const loadNav = async () => {
     return window.nav;
 };
 
-export const registerNavApp = () => {
-    singleSpa.registerApplication('nav', loadNav, () => true);
+export const registerNavApp = (props) => {
+    singleSpa.registerApplication('nav', loadNav, () => true, props);
 };
