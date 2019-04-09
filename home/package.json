@@ -5,13 +5,11 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "icis-react-scripts": "2.1.9"
+    "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "PORT=3008 react-scripts start",
-    "start-spa": "REACT_APP_ENTRY=src/spaEntry react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-spa": "REACT_APP_ENTRY=src/spaEntry react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
