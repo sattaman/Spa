@@ -10,7 +10,7 @@ export default ({ history }) => (
                     <Link to="/home">Home</Link>
                 </Li>
                 <Li>
-                    <Link to="/news/">News</Link>
+                    <Link to="/news">News</Link>
                 </Li>
                 <Li>
                     <Link to={{ pathname: "/news/article", state: 'test' }}>Article</Link>
