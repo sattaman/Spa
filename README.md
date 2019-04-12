@@ -1,5 +1,23 @@
 # POC for single-spa
 
+## How to run
+
+In each of the child app folders (nav, home and news) run
+
+```
+yarn
+yarn build
+yarn serve
+```
+
+In the main app, ensure the IP is you local IP then run
+
+```
+yarn 
+yarn start
+```
+
+
 ## Why?
 
 - Allow seamless transitioning between pages within overall app without page loads.
