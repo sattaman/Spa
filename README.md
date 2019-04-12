@@ -10,7 +10,7 @@ yarn build
 yarn serve
 ```
 
-In the main app, ensure the IP is you local IP then run
+In the main app, ensure the IP is your local IP then run
 
 ```
 yarn 
